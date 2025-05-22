@@ -25,7 +25,7 @@ stages{
             parallel{
                 stage ("Deploy to Staging"){
                     steps {
-                        deploy adapters: [tomcat9(alternativeDeploymentContext: '', path: '', url: ''), tomcat9(alternativeDeploymentContext: '', path: '', url: 'http://13.235.90.87:8080/')], contextPath: null, war: '**/*.war'
+                        deploy adapters: [tomcat9(alternativeDeploymentContext: '', path: '', url: 'http://15.207.55.205:8080/')], contextPath: null, war: '**/*.war'
                     }
                 }
             }
